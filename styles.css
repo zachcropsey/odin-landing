@@ -1,0 +1,100 @@
+/* CSS Reset - Credit Josh Comeau
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  border: 1px solid red;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --dark-bg-color: #1f2937;
+  --btm-bg-color: #3882f6;
+  --quote-bg-color: #e5e7eb;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  color: #f9faf8;
+  font-size: 24px;
+  justify-content: center;
+  width: 50%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  list-style: none;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.first {
+  background-color: var(--dark-bg-color);
+}
+
+.hero-container h1,
+p {
+  color: white;
+}
+
+.btn {
+  background-color: #3882f6;
+  border-radius: 4px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+}
+.content-left,
+.content-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
